@@ -11,6 +11,7 @@ let gatoY = (canvas.height/2)-2;
 let comidaX= canvas.width - ANCHO_COMIDA;
 let comidaY = canvas.height - ALTO_COMIDA;
 let puntaje = 0;
+let tiempo = 10;
 
 
 
@@ -26,6 +27,7 @@ function graficarComida(){
 function iniciarJuego(){
     graficarGato();
     graficarComida();
+    setInterval(restarTiempo,1000)
 
 }
 
@@ -78,8 +80,13 @@ function detectorColision (){
         comidaY=generarAleatorio(0,canvas.height-ALTO_COMIDA)
         puntaje=puntaje+1
         mostrarEnSpam("puntos",puntaje)
-        
     }
+}
+
+function restarTiempo (){
+    tiempo = tiempo - 1
+    mostrarEnSpam("tiempo" ,tiempo)
+    
 }
 
 
