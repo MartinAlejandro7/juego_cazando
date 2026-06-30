@@ -1,6 +1,4 @@
-/* --------------------------
-   ESTILOS GENERALES Y FONDO ESPECTACULAR
---------------------------- */
+
 body {
   background-image: url("fondoGato.png");
   background-size: cover;       /* Que cubra toda la pantalla */
