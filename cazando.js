@@ -13,28 +13,26 @@ let comidaY = canvas.height - ALTO_COMIDA;
 let puntaje = 0;
 let tiempo = 50;
 let intervalo 
-// --- AGREGAR ESTO AL INICIO ---
-// Cargamos las imágenes
-let imgGato = new Image();
-let imgComida = new Image();
 
-// Rutas exactas según tu estructura
-imgGato.src = "gato.png";
-imgComida.src = "comida.png";
+// Cargamos las imágenes
+let imgGato1 = new Image();
+let imgComida1 = new Image();
+
+
+imgGato1.src = "gato.png";
+imgComida1.src = "comida.png";
 // --- FIN DE LO AGREGADO ---
 
 
 
 // Reemplaza tu función graficarGato
 function graficarGato(){
-    // Dibuja la imagen en lugar del rectángulo amarillo
-    ctx.drawImage(imgGato, gatoX, gatoY, ANCHO_GATO, ALTO_GATO);
+    ctx.drawImage(imgGato1, gatoX, gatoY, ANCHO_GATO, ALTO_GATO);
 }
 
-// Reemplaza tu función graficarComida
+
 function graficarComida(){
-    // Dibuja la imagen en lugar del rectángulo rojo
-    ctx.drawImage(imgComida, comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA);
+    ctx.drawImage(imgComida1, comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA);
 }
 function iniciarJuego(){
     graficarGato();
