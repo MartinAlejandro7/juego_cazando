@@ -4,25 +4,23 @@
   <title>Juego Cazando</title>
   <link href="cazando.css" rel="stylesheet"/>
   <script src="utils.js"></script>
-
 </head>
 <body onload="iniciarJuego();">
 
   <h1>Juego Cazando</h1>
-  <p>Autor: ALEJANDRO SIMBAÑA</p>
+  <p class="autor">Autor: ALEJANDRO SIMBAÑA</p>
+  <br>
   <canvas id="areaJuego" width="500" height="500"></canvas>
-
-
-
+  <br>
   <div class="controles">
     <button onclick="moverArriba();">⬆</button>
-    <br>
-    <button onclick="moverIzquierda();">⬅</button>
-    <button onclick="moverAbajo()">⬇</button>
-    <button onclick="moverDerecha();">➡</button>
+    <div class="fila-medio">
+      <button onclick="moverIzquierda();">⬅</button>
+      <button onclick="moverAbajo()">⬇</button>
+      <button onclick="moverDerecha();">➡</button>
+    </div>
     <button onclick="reiniciar();">REINICIAR</button>
   </div>
-
 
   <div class="panel">
     <span>Puntos: <span id="puntos">0</span></span>
@@ -31,6 +29,6 @@
 
   <p id="mensaje"></p>
 
-<script src="cazando.js"></script>
+  <script src="cazando.js"></script>
 </body>
 </html>
