@@ -1,0 +1,17 @@
+Prompt 1
+Quiero que actúes como un desarrollador web con experiencia en HTML, CSS y que me ayudes a crear el diseño de un juego web de una manera moderna y llamativa. Quiero que me des ideas y código bien organizado, fácil de entender, utilizando colores atractivos, efectos visuales y una distribución ordenada de los elementos. Cuando te pida algún cambio, responde únicamente con el código necesario, procurando que el diseño se vea profesional, agradable para el usuario y sin afectar el funcionamiento del juego.
+
+prompt 2
+Diseña un texto para mostrar el autor debajo del título. Debe tener un estilo elegante con colores degradados, bordes redondeados, un fondo semitransparente y un ligero efecto de iluminación.
+
+prompt 3
+Haz que toda la interfaz permanezca centrada en la pantalla y conserve una apariencia organizada en diferentes tamaños de monitor
+
+prompt 4
+Crea un fondo con un degradado de varios colores que tenga una animación suave para dar la sensación de movimiento y hacer que la página se vea moderna y llamativa.
+
+prompt 5
+Agrega animación a los botones deben reaccionar al pasar el mouse y el título debe tener un efecto de brillo continuo.
+
+prompt 6
+Dale al area del juego un diseño limpio con fondo blanco, esquinas redondeadas y sombras que resalten el canvas del resto de la página.

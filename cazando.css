@@ -2,12 +2,12 @@
    ESTILOS GENERALES Y FONDO ESPECTACULAR
 --------------------------- */
 body {
+  background-image: url("fondoGato.png");
+  background-size: cover;       /* Que cubra toda la pantalla */
+  background-position: center;  /* Centrar la imagen */
+  background-repeat: no-repeat; /* Que no se repita */
   text-align: center;
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-  /* Fondo dinámico con colores vivos y movimiento */
-  background: linear-gradient(135deg, #000428, #004e92, #4b0082, #ff105f, #ffad06);
-  background-size: 400% 400%;
-  animation: fondoEspectacular 20s ease infinite;
   margin: 0;
   padding: 35px 20px;
   color: #ffffff;
@@ -69,7 +69,7 @@ h1 {
    ÁREA DE JUEGO
 --------------------------- */
 canvas {
-  background: #ffffff;
+  background: #ffffff; /* <-- este es el fondo blanco del cuadro */
   border-radius: 16px;
   box-shadow: 
     0 0 30px rgba(0, 240, 255, 0.9),

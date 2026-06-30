@@ -1,0 +1,27 @@
+PROMPT INICIAL
+Actúa como desarrollador web especializado en HTML, CSS y JavaScript. Tengo un juego desarrollado con estas tecnologías y necesito que realices las modificaciones solicitadas, manteniendo siempre la lógica y funcionamiento original del proyecto. Los cambios que requiero son:
+1. Agregar imágenes al proyecto.
+2. Incorporar un fondo para la página.
+
+PROMPT 1
+Quiero que la imagen de fondo se vea correctamente en toda la página, fuera del área del juego, y no modifiques nada del código JavaScript.
+
+PROMPT 2 
+Actúa como desarrollador JavaScript. Reemplaza los rectángulos de colores que representan al gato y la comida por las imágenes correspondientes. No cambies la lógica, las variables ni el funcionamiento original del juego.
+
+PROMPT 3
+Actúa como desarrollador web. Verifica que todas las rutas de archivos coincidan con la estructura de carpetas del proyecto para que todos los elementos se carguen sin errores.
+
+
+CAMBIOS REALIZADO
+- En el archivo cazando.js:
+- Se agregó la carga de las imágenes al inicio del código: `imgGato` y `imgComida`, con sus rutas correctas.
+- Se modificaron las funciones `graficarGato()` y `graficarComida()` para dibujar las imágenes con `drawImage()` en lugar de usar rectángulos, manteniendo los mismos tamaños y posiciones.
+
+
+
+
+
+
+
+

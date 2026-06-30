@@ -1,29 +1,40 @@
 let canvas = document.getElementById("areaJuego");
 let ctx = canvas.getContext("2d");
 
-const ALTO_GATO = 55;
-const ANCHO_GATO = 40;
-const ALTO_COMIDA = 40;
-const ANCHO_COMIDA = 50;
+const ALTO_GATO = 70;
+const ANCHO_GATO = 60;
+const ALTO_COMIDA = 50;
+const ANCHO_COMIDA = 60;
 
 let gatoX = (canvas.width/2)-10;
 let gatoY = (canvas.height/2)-2;
 let comidaX= canvas.width - ANCHO_COMIDA;
 let comidaY = canvas.height - ALTO_COMIDA;
 let puntaje = 0;
-let tiempo = 20;
+let tiempo = 50;
 let intervalo 
+// --- AGREGAR ESTO AL INICIO ---
+// Cargamos las imágenes
+let imgGato = new Image();
+let imgComida = new Image();
+
+// Rutas exactas según tu estructura
+imgGato.src = "gato.png";
+imgComida.src = "comida.png";
+// --- FIN DE LO AGREGADO ---
 
 
 
+// Reemplaza tu función graficarGato
 function graficarGato(){
-    graficarRectangulo(gatoX,gatoY,ANCHO_GATO,ALTO_GATO,"yellow");
-    
+    // Dibuja la imagen en lugar del rectángulo amarillo
+    ctx.drawImage(imgGato, gatoX, gatoY, ANCHO_GATO, ALTO_GATO);
 }
 
+// Reemplaza tu función graficarComida
 function graficarComida(){
-   graficarRectangulo(comidaX,comidaY,ANCHO_COMIDA,ALTO_COMIDA,"RED")
-    
+    // Dibuja la imagen en lugar del rectángulo rojo
+    ctx.drawImage(imgComida, comidaX, comidaY, ANCHO_COMIDA, ALTO_COMIDA);
 }
 function iniciarJuego(){
     graficarGato();
@@ -100,7 +111,7 @@ function restarTiempo (){
 }
  
 function reiniciar (){
-    tiempo=20
+    tiempo=50
     mostrarEnSpam("tiempo",tiempo)
     puntaje=0
     mostrarEnSpam("puntos",puntaje)
